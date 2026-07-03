@@ -1,6 +1,10 @@
 # 🎮 Tic Tac Toe (Python + NumPy)
 
-A classic Tic Tac Toe game built in Python, using **NumPy** for the game logic and **Tkinter** for a clean, modern graphical interface.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tic-tac-toe-b9f6qh2pjszwnjcr8chvz3.streamlit.app/)
+
+**🔗 Live Demo:** [tic-tac-toe-b9f6qh2pjszwnjcr8chvz3.streamlit.app](https://tic-tac-toe-b9f6qh2pjszwnjcr8chvz3.streamlit.app/)
+
+A classic Tic Tac Toe game built in Python, using **NumPy** for the game logic and **Tkinter** for a clean, modern graphical interface. Also deployed as a web app using **Streamlit**.
 
 ---
 
@@ -36,8 +40,10 @@ This project started as a simple console-based Tic Tac Toe game where the board 
 ```
 tic-tac-toe/
 │
-├── tic_tac_toe_gui.py   # Main game file (run this)
-└── README.md            # Project documentation
+├── app.py                # Web version (Streamlit) - deployed live
+├── tic_tac_toe_gui.py    # Desktop version (Tkinter)
+├── requirements.txt      # Dependencies for deployment
+└── README.md             # Project documentation
 ```
 
 ---
@@ -63,11 +69,18 @@ pip install numpy
 
 ### 3. Run the Game
 
+**Desktop version (Tkinter):**
 ```bash
 python tic_tac_toe_gui.py
 ```
-
 The game window will open automatically. 🎉
+
+**Web version (Streamlit) — run locally:**
+```bash
+pip install streamlit
+streamlit run app.py
+```
+Or simply try it live without installing anything: [🔗 Live Demo](https://tic-tac-toe-b9f6qh2pjszwnjcr8chvz3.streamlit.app/)
 
 ---
 
